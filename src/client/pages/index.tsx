@@ -1,8 +1,10 @@
-import { Heading } from "@kuma-ui/core";
 import React from "react";
+import { PageHeader } from "../components/ui/PageHeader";
 
 export default (() => {
     return (
-        <Heading>It works!</Heading>
+        <>
+            <PageHeader>おかえりなさい、るちーかさん。</PageHeader>
+        </>
     );
 }) as React.FC;

@@ -1,0 +1,17 @@
+.main {
+    margin-left: var(--nav-width);
+    margin-top: 96px;
+}
+
+.card {
+    background: var(--panel-bg);
+    padding: 32px;
+    border-radius: 32px;
+    box-shadow: var(--panel-shadow);
+}
+
+.footer {
+    margin-top: 32px;
+    font-size: 12px;
+    color: var(--text-muted);
+}
