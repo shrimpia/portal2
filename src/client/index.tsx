@@ -4,18 +4,11 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, useRoutes } from 'react-router-dom';
 
 import 'vite/modulepreload-polyfill';
-
-import routes from '~react-pages';
+import './style.scss';
+import '@tabler/icons-webfont/dist/tabler-icons.min.css';
+import { App } from './App';
 
 const app = createRoot(document.getElementById('app'));
-
-const App = () => {
-    return (
-        <Suspense fallback={<p>Loading...</p>}>
-            {useRoutes(routes)}
-        </Suspense>
-    );
-};
 
 app.render(
   <StrictMode>

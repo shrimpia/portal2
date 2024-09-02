@@ -8,5 +8,9 @@
 		"allowJs": false,
 		"esModuleInterop": true,
 		"isolatedModules": true,
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"]
+        },
 	},
 }

@@ -1,12 +1,8 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
-        "baseUrl": "./",
-        "paths": {
-            "@/*": ["src/*"]
-        },
         "jsx": "react",
-        "lib": ["dom", "dom.iterable"]
+        "lib": ["dom", "dom.iterable"],
     },
-    "include": ["../kuma.config.ts" ],
+    "include": ["./src/**/*.ts"],
 }

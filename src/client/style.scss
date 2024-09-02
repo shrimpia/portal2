@@ -1,0 +1,23 @@
+@import './reset.css';
+
+:root {
+    /* --- Global --- */
+    --body-bg: #fff5f5;
+    --body-text: #1e1c1c;
+
+    --panel-bg: #fff;
+    --panel-text: #141313;
+    --panel-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --panel-border: 1px solid #e1e1e1;
+
+    --primary: #B93E43;
+    --text-muted: #777;
+
+    /* --- Navigation Bar --- */
+    --nav-width: 300px;
+    --nav-indicator-color: var(--primary);
+    --nav-hover-bg: rgba(0, 0, 0, 0.05);
+
+    background-color: var(--body-bg);
+    color: var(--body-text);
+}
