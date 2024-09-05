@@ -17,6 +17,7 @@ export const Sidebar = () => {
                 <NavItem to="/emoji-request" iconClassName="ti ti-mood-smile" label="絵文字リクエスト" />
                 <NavItem to="/events" iconClassName="ti ti-calendar-event" label="イベントカレンダー" />
                 <NavItem to="/settings" iconClassName="ti ti-settings" label="設定" />
+                <NavItem to="/_debug" iconClassName="ti ti-bug" label="Debug Mode" />
             </nav>
 
             <div className={styles.commands}>

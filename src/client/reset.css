@@ -29,12 +29,13 @@ ol[role='list'] {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  line-height: 1.5;
+  /* PATCH: 日本語に適したline-heightに調整 */
+  line-height: 2;
 }
 
 /* Set shorter line heights on headings and interactive elements */
 h1, h2, h3, h4,
-button, input, label {
+button, input, label, a[role='button'] {
   line-height: 1.1;
 }
 
@@ -72,18 +73,4 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
-}
-
-/* ここから本プロジェクト独自 */
-
-/*制御しやすいように、見出しのマージンをリセット */
-h1, h2, h3, h4, h5, h6 {
-  margin-block-start: 0;
-}
-
-/*リストのマージンをリセット */
-ul, ol {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
 }

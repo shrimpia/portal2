@@ -9,10 +9,12 @@
 }
 
 .card {
-    background: var(--panel-bg);
+    background: var(--article-bg);
+    color: var(--article-text);
     padding: 32px;
     border-radius: 32px;
-    box-shadow: var(--panel-shadow);
+    box-shadow: var(--article-shadow);
+    border: var(--article-border);
 }
 
 .footer {

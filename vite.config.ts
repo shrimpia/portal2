@@ -1,4 +1,3 @@
-import kumaUI from '@kuma-ui/vite';
 import react from '@vitejs/plugin-react';
 import pages from 'vite-plugin-pages';
 import { defineConfig } from 'vite';
@@ -10,9 +9,7 @@ export default defineConfig({
     pages({
       dirs: 'src/client/pages',
       exclude: ['**/*.module.scss.d.ts'],
-    }),
-    kumaUI({
-      wasm: true,
+      importMode: 'async',
     }),
     tsconfigPaths(),
   ],

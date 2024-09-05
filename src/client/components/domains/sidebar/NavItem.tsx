@@ -19,11 +19,11 @@ export const NavItem: React.FC<NavItemProp> = (p) => {
     );
 
     return p.to ? (
-        <NavLink to={p.to} className={p => `${styles.navItem} ${p.isActive ? styles.navItemActive : ''}`}>
+        <NavLink to={p.to} role="button" className={p => `${styles.navItem} ${p.isActive ? styles.navItemActive : ''}`}>
             {inner}
         </NavLink>
     ) : p.href ? (
-        <a href={p.href} className={styles.navItem}>
+        <a href={p.href} role="button" className={styles.navItem}>
             {inner}
         </a>
     ) : (
